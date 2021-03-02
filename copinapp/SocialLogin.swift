@@ -7,7 +7,8 @@
 
 import SwiftUI
 import GoogleSignIn
-import FBSDKCoreKit
+import FBSDKLoginKit
+import Firebase
 
 
 // Google Sign In
@@ -17,6 +18,26 @@ struct GoogleSignInButton: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: GIDSignInButton, context: Context) {
+        
+    }
+}
+
+// Facebook Sign In
+struct FacebookSignInButton: UIViewRepresentable {
+    
+    func makeCoordinator() -> FacebookSignInButton.Coordinator {
+        return FacebookSignInButton.Coordinator()
+    }
+    
+    func makeUIView(context: UIViewRepresentableContext<FacebookSignInButton>) -> FBLoginButton {
+        let delegate = AppDelegate()
+        let button = FBLoginButton()
+        button.permissions = ["email", "public_profile"]
+        button.delegate = delegate
+        return button
+    }
+    
+    func updateUIView(_ uiView: FBLoginButton, context: Context) {
         
     }
 }

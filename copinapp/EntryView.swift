@@ -20,6 +20,8 @@ struct EntryView: View {
                     .onTapGesture {
                         SocialLogin().attemptLoginGoogle()
                     }
+                FacebookSignInButton()
+                Spacer()
             }
         }
     }

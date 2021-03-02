@@ -8,12 +8,14 @@
 import SwiftUI
 import Firebase
 import GoogleSignIn
+import FBSDKLoginKit
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
+        // Google Init
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().restorePreviousSignIn()
@@ -63,6 +65,34 @@ extension AppDelegate: GIDSignInDelegate {
         }
     }
 }
+
+extension AppDelegate: LoginButtonDelegate {
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        try! Auth.auth().signOut()
+        print("Did Logout")
+    }
+    
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        if error != nil {
+            print((error?.localizedDescription))
+            return
+        }
+        
+        if AccessToken.current != nil {
+            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+            
+            if error != nil {
+                print((error?.localizedDescription))
+                return
+            }
+            
+            print("Facebook Login Success")
+            // TODO : Backend login with credential
+        }
+    }
+}
+
+
 
 @main
 struct copinappApp: App {
