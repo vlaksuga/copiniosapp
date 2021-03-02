@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606F4F325E8903E004D7BC7 /* EntryView.swift */; };
+		2606F4FC25E8CF42004D7BC7 /* SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */; };
+		26560E0F25E773C2004C62D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */; };
+		26560E1425E773F0004C62D2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26560E1325E773F0004C62D2 /* Podfile */; };
+		265B4FBE25E6316000436687 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B4FBD25E6315F00436687 /* Loader.swift */; };
+		265BCC5825E5FFA100210628 /* copinappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC5725E5FFA100210628 /* copinappApp.swift */; };
+		265BCC5A25E5FFA100210628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC5925E5FFA100210628 /* ContentView.swift */; };
+		265BCC5C25E5FFA400210628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265BCC5B25E5FFA400210628 /* Assets.xcassets */; };
+		265BCC5F25E5FFA400210628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265BCC5E25E5FFA400210628 /* Preview Assets.xcassets */; };
+		265BCC6A25E5FFA400210628 /* copinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC6925E5FFA400210628 /* copinappTests.swift */; };
+		265BCC7525E5FFA400210628 /* copinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC7425E5FFA400210628 /* copinappUITests.swift */; };
+		265BCC8E25E601C900210628 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC8D25E601C900210628 /* ViewModel.swift */; };
+		265BCC9625E6034000210628 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC9525E6034000210628 /* WebView.swift */; };
+		347AC2B817F6E481FE09CDEB /* Pods_copinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */; };
+		826E63F46F160622875DC12C /* Pods_copinapp_copinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */; };
+		AD090E795DDC83687D2E2976 /* Pods_copinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35370E66C330929C25A9CD2C /* Pods_copinapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		265BCC6625E5FFA400210628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265BCC4C25E5FFA000210628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265BCC5325E5FFA100210628;
+			remoteInfo = copinapp;
+		};
+		265BCC7125E5FFA400210628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265BCC4C25E5FFA000210628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265BCC5325E5FFA100210628;
+			remoteInfo = copinapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2586CE65AEDA89B10DA3C283 /* Pods-copinapp-copinappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp-copinappUITests.debug.xcconfig"; path = "Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2606F4F325E8903E004D7BC7 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogin.swift; sourceTree = "<group>"; };
+		26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26560E1325E773F0004C62D2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		265B4FBD25E6315F00436687 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		265BCC5425E5FFA100210628 /* copinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = copinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		265BCC5725E5FFA100210628 /* copinappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copinappApp.swift; sourceTree = "<group>"; };
+		265BCC5925E5FFA100210628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		265BCC5B25E5FFA400210628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		265BCC5E25E5FFA400210628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		265BCC6025E5FFA400210628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265BCC6525E5FFA400210628 /* copinappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = copinappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		265BCC6925E5FFA400210628 /* copinappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copinappTests.swift; sourceTree = "<group>"; };
+		265BCC6B25E5FFA400210628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265BCC7025E5FFA400210628 /* copinappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = copinappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		265BCC7425E5FFA400210628 /* copinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copinappUITests.swift; sourceTree = "<group>"; };
+		265BCC7625E5FFA400210628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265BCC8D25E601C900210628 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		265BCC9525E6034000210628 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		35370E66C330929C25A9CD2C /* Pods_copinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_copinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40387F75172A2A3D08EDE587 /* Pods-copinapp-copinappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp-copinappUITests.release.xcconfig"; path = "Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E1CCCA7F7CF0AF67AB5D81B /* Pods-copinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp.debug.xcconfig"; path = "Target Support Files/Pods-copinapp/Pods-copinapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_copinappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A480019154F130F1EB79663E /* Pods-copinappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinappTests.debug.xcconfig"; path = "Target Support Files/Pods-copinappTests/Pods-copinappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9D7907A6B8D58C6477E2E5 /* Pods-copinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp.release.xcconfig"; path = "Target Support Files/Pods-copinapp/Pods-copinapp.release.xcconfig"; sourceTree = "<group>"; };
+		ED4A172462D3B81C8EDAD599 /* Pods-copinappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinappTests.release.xcconfig"; path = "Target Support Files/Pods-copinappTests/Pods-copinappTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_copinapp_copinappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		265BCC5125E5FFA100210628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD090E795DDC83687D2E2976 /* Pods_copinapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265BCC6225E5FFA400210628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347AC2B817F6E481FE09CDEB /* Pods_copinappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265BCC6D25E5FFA400210628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826E63F46F160622875DC12C /* Pods_copinapp_copinappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		265BCC4B25E5FFA000210628 = {
+			isa = PBXGroup;
+			children = (
+				265BCC5625E5FFA100210628 /* copinapp */,
+				265BCC6825E5FFA400210628 /* copinappTests */,
+				265BCC7325E5FFA400210628 /* copinappUITests */,
+				265BCC5525E5FFA100210628 /* Products */,
+				7F862D43B494740591E05FE2 /* Pods */,
+				386EB6B4B71875F3EB45BDEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		265BCC5525E5FFA100210628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				265BCC5425E5FFA100210628 /* copinapp.app */,
+				265BCC6525E5FFA400210628 /* copinappTests.xctest */,
+				265BCC7025E5FFA400210628 /* copinappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		265BCC5625E5FFA100210628 /* copinapp */ = {
+			isa = PBXGroup;
+			children = (
+				265BCC5725E5FFA100210628 /* copinappApp.swift */,
+				265BCC5925E5FFA100210628 /* ContentView.swift */,
+				2606F4F325E8903E004D7BC7 /* EntryView.swift */,
+				265BCC5B25E5FFA400210628 /* Assets.xcassets */,
+				265BCC6025E5FFA400210628 /* Info.plist */,
+				26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */,
+				26560E1325E773F0004C62D2 /* Podfile */,
+				265BCC5D25E5FFA400210628 /* Preview Content */,
+				265BCC8D25E601C900210628 /* ViewModel.swift */,
+				265BCC9525E6034000210628 /* WebView.swift */,
+				265B4FBD25E6315F00436687 /* Loader.swift */,
+				2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */,
+			);
+			path = copinapp;
+			sourceTree = "<group>";
+		};
+		265BCC5D25E5FFA400210628 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				265BCC5E25E5FFA400210628 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		265BCC6825E5FFA400210628 /* copinappTests */ = {
+			isa = PBXGroup;
+			children = (
+				265BCC6925E5FFA400210628 /* copinappTests.swift */,
+				265BCC6B25E5FFA400210628 /* Info.plist */,
+			);
+			path = copinappTests;
+			sourceTree = "<group>";
+		};
+		265BCC7325E5FFA400210628 /* copinappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				265BCC7425E5FFA400210628 /* copinappUITests.swift */,
+				265BCC7625E5FFA400210628 /* Info.plist */,
+			);
+			path = copinappUITests;
+			sourceTree = "<group>";
+		};
+		386EB6B4B71875F3EB45BDEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35370E66C330929C25A9CD2C /* Pods_copinapp.framework */,
+				FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */,
+				7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F862D43B494740591E05FE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E1CCCA7F7CF0AF67AB5D81B /* Pods-copinapp.debug.xcconfig */,
+				BD9D7907A6B8D58C6477E2E5 /* Pods-copinapp.release.xcconfig */,
+				2586CE65AEDA89B10DA3C283 /* Pods-copinapp-copinappUITests.debug.xcconfig */,
+				40387F75172A2A3D08EDE587 /* Pods-copinapp-copinappUITests.release.xcconfig */,
+				A480019154F130F1EB79663E /* Pods-copinappTests.debug.xcconfig */,
+				ED4A172462D3B81C8EDAD599 /* Pods-copinappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		265BCC5325E5FFA100210628 /* copinapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265BCC7925E5FFA400210628 /* Build configuration list for PBXNativeTarget "copinapp" */;
+			buildPhases = (
+				BDA09993744364196C4E723E /* [CP] Check Pods Manifest.lock */,
+				265BCC5025E5FFA100210628 /* Sources */,
+				265BCC5125E5FFA100210628 /* Frameworks */,
+				265BCC5225E5FFA100210628 /* Resources */,
+				ED345A756B1A2D032BEA1F17 /* [CP] Embed Pods Frameworks */,
+				FCFA39D5EA1C3E95187ADBC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = copinapp;
+			productName = copinapp;
+			productReference = 265BCC5425E5FFA100210628 /* copinapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		265BCC6425E5FFA400210628 /* copinappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265BCC7C25E5FFA400210628 /* Build configuration list for PBXNativeTarget "copinappTests" */;
+			buildPhases = (
+				69CD4F829CDE8ED730B44928 /* [CP] Check Pods Manifest.lock */,
+				265BCC6125E5FFA400210628 /* Sources */,
+				265BCC6225E5FFA400210628 /* Frameworks */,
+				265BCC6325E5FFA400210628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265BCC6725E5FFA400210628 /* PBXTargetDependency */,
+			);
+			name = copinappTests;
+			productName = copinappTests;
+			productReference = 265BCC6525E5FFA400210628 /* copinappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		265BCC6F25E5FFA400210628 /* copinappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265BCC7F25E5FFA400210628 /* Build configuration list for PBXNativeTarget "copinappUITests" */;
+			buildPhases = (
+				76DD2F7945752800B621B0E6 /* [CP] Check Pods Manifest.lock */,
+				265BCC6C25E5FFA400210628 /* Sources */,
+				265BCC6D25E5FFA400210628 /* Frameworks */,
+				265BCC6E25E5FFA400210628 /* Resources */,
+				7BD05D9DA4AC07E861F5469B /* [CP] Embed Pods Frameworks */,
+				76DD70C6B88DD24A1AA4D12D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265BCC7225E5FFA400210628 /* PBXTargetDependency */,
+			);
+			name = copinappUITests;
+			productName = copinappUITests;
+			productReference = 265BCC7025E5FFA400210628 /* copinappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		265BCC4C25E5FFA000210628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					265BCC5325E5FFA100210628 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					265BCC6425E5FFA400210628 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 265BCC5325E5FFA100210628;
+					};
+					265BCC6F25E5FFA400210628 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 265BCC5325E5FFA100210628;
+					};
+				};
+			};
+			buildConfigurationList = 265BCC4F25E5FFA000210628 /* Build configuration list for PBXProject "copinapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 265BCC4B25E5FFA000210628;
+			productRefGroup = 265BCC5525E5FFA100210628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				265BCC5325E5FFA100210628 /* copinapp */,
+				265BCC6425E5FFA400210628 /* copinappTests */,
+				265BCC6F25E5FFA400210628 /* copinappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		265BCC5225E5FFA100210628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265BCC5F25E5FFA400210628 /* Preview Assets.xcassets in Resources */,
+				265BCC5C25E5FFA400210628 /* Assets.xcassets in Resources */,
+				26560E1425E773F0004C62D2 /* Podfile in Resources */,
+				26560E0F25E773C2004C62D2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265BCC6325E5FFA400210628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265BCC6E25E5FFA400210628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69CD4F829CDE8ED730B44928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-copinappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76DD2F7945752800B621B0E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-copinapp-copinappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76DD70C6B88DD24A1AA4D12D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BD05D9DA4AC07E861F5469B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA09993744364196C4E723E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-copinapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED345A756B1A2D032BEA1F17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp/Pods-copinapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp/Pods-copinapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-copinapp/Pods-copinapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCFA39D5EA1C3E95187ADBC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp/Pods-copinapp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-copinapp/Pods-copinapp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-copinapp/Pods-copinapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		265BCC5025E5FFA100210628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265BCC5A25E5FFA100210628 /* ContentView.swift in Sources */,
+				265BCC9625E6034000210628 /* WebView.swift in Sources */,
+				265BCC8E25E601C900210628 /* ViewModel.swift in Sources */,
+				2606F4FC25E8CF42004D7BC7 /* SocialLogin.swift in Sources */,
+				2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */,
+				265BCC5825E5FFA100210628 /* copinappApp.swift in Sources */,
+				265B4FBE25E6316000436687 /* Loader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265BCC6125E5FFA400210628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265BCC6A25E5FFA400210628 /* copinappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265BCC6C25E5FFA400210628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265BCC7525E5FFA400210628 /* copinappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		265BCC6725E5FFA400210628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265BCC5325E5FFA100210628 /* copinapp */;
+			targetProxy = 265BCC6625E5FFA400210628 /* PBXContainerItemProxy */;
+		};
+		265BCC7225E5FFA400210628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265BCC5325E5FFA100210628 /* copinapp */;
+			targetProxy = 265BCC7125E5FFA400210628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		265BCC7725E5FFA400210628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		265BCC7825E5FFA400210628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		265BCC7A25E5FFA400210628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1CCCA7F7CF0AF67AB5D81B /* Pods-copinapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"copinapp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = copinapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		265BCC7B25E5FFA400210628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9D7907A6B8D58C6477E2E5 /* Pods-copinapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"copinapp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = copinapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		265BCC7D25E5FFA400210628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A480019154F130F1EB79663E /* Pods-copinappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = copinappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/copinapp.app/copinapp";
+			};
+			name = Debug;
+		};
+		265BCC7E25E5FFA400210628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4A172462D3B81C8EDAD599 /* Pods-copinappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = copinappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/copinapp.app/copinapp";
+			};
+			name = Release;
+		};
+		265BCC8025E5FFA400210628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2586CE65AEDA89B10DA3C283 /* Pods-copinapp-copinappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = copinappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = copinapp;
+			};
+			name = Debug;
+		};
+		265BCC8125E5FFA400210628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40387F75172A2A3D08EDE587 /* Pods-copinapp-copinappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = copinappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = copinapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		265BCC4F25E5FFA000210628 /* Build configuration list for PBXProject "copinapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265BCC7725E5FFA400210628 /* Debug */,
+				265BCC7825E5FFA400210628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		265BCC7925E5FFA400210628 /* Build configuration list for PBXNativeTarget "copinapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265BCC7A25E5FFA400210628 /* Debug */,
+				265BCC7B25E5FFA400210628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		265BCC7C25E5FFA400210628 /* Build configuration list for PBXNativeTarget "copinappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265BCC7D25E5FFA400210628 /* Debug */,
+				265BCC7E25E5FFA400210628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		265BCC7F25E5FFA400210628 /* Build configuration list for PBXNativeTarget "copinappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265BCC8025E5FFA400210628 /* Debug */,
+				265BCC8125E5FFA400210628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 265BCC4C25E5FFA000210628 /* Project object */;
+}
