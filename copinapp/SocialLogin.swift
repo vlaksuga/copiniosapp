@@ -11,34 +11,28 @@ import FBSDKLoginKit
 import Firebase
 
 
-// Google Sign In
-struct GoogleSignInButton: UIViewRepresentable {
-    func makeUIView(context: Context) -> GIDSignInButton {
-        return GIDSignInButton()
-    }
-    
-    func updateUIView(_ uiView: GIDSignInButton, context: Context) {
-        
-    }
-}
-
 // Facebook Sign In
-struct FacebookSignInButton: UIViewRepresentable {
-    
-    func makeCoordinator() -> FacebookSignInButton.Coordinator {
-        return FacebookSignInButton.Coordinator()
-    }
-    
-    func makeUIView(context: UIViewRepresentableContext<FacebookSignInButton>) -> FBLoginButton {
-        let delegate = AppDelegate()
-        let button = FBLoginButton()
-        button.permissions = ["email", "public_profile"]
-        button.delegate = delegate
-        return button
-    }
-    
-    func updateUIView(_ uiView: FBLoginButton, context: Context) {
-        
+class FacebookLoginManager: ObservableObject {
+    let loginManager = LoginManager()
+    func attemptLoginFacebook() {
+        loginManager.logIn(permissions: [.publicProfile, .email], viewController: nil) { result in
+            switch result {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User Canceled")
+            case .success(granted: _, declined: _, token: let accessToken):
+                print(accessToken?.tokenString ?? "no token")
+                let credential = FacebookAuthProvider.credential(withAccessToken: accessToken?.tokenString ?? "")
+                Auth.auth().signIn(with: credential) { (res, e) in
+                    if e != nil {
+                        print((e?.localizedDescription) ?? "error")
+                        return
+                    }
+                    print("Firebase - Facebook Authentication Success")
+                }
+            }
+        }
     }
 }
 
@@ -60,11 +54,5 @@ struct SocialLogin: UIViewRepresentable {
     
     func signOutGoogleAccount() {
         GIDSignIn.sharedInstance()?.signOut()
-    }
-}
-
-struct GoogleSignInButton_Previews: PreviewProvider {
-    static var previews: some View {
-        GoogleSignInButton()
     }
 }

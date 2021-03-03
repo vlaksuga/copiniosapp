@@ -12,17 +12,6 @@ struct EntryView: View {
         ZStack {
             Color.white
                 .ignoresSafeArea()
-            VStack {
-                Image("logo")
-                    .resizable()
-                    .frame(width: 150, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                GoogleSignInButton()
-                    .onTapGesture {
-                        SocialLogin().attemptLoginGoogle()
-                    }
-                FacebookSignInButton()
-                Spacer()
-            }
         }
     }
 }
