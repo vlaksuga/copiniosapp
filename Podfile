@@ -22,5 +22,6 @@ target 'copinapp' do
   pod 'Firebase/Messaging'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
+  pod 'Firebase/Messaging'
 
 end

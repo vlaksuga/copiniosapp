@@ -30,6 +30,7 @@ class FacebookLoginManager: ObservableObject {
                         return
                     }
                     print("Firebase - Facebook Authentication Success")
+                    // Send backend Auth
                 }
             }
         }
@@ -38,6 +39,8 @@ class FacebookLoginManager: ObservableObject {
 
 // Sign-In flow UI of the provider
 struct SocialLogin: UIViewRepresentable {
+    
+    
     func makeUIView(context: Context) -> UIView {
         return UIView()
     }
@@ -54,5 +57,24 @@ struct SocialLogin: UIViewRepresentable {
     
     func signOutGoogleAccount() {
         GIDSignIn.sharedInstance()?.signOut()
+    }
+    
+    func attemptLoginTwitter() {
+        let provider = OAuthProvider(providerID: "twitter.com")
+        provider.getCredentialWith(nil) { credential, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            
+            Auth.auth().signIn(with: credential!) { res, e in
+                if e != nil {
+                    print((e?.localizedDescription) ?? "error")
+                    return
+                }
+                print("Firebase - Twitter Authentication Success")
+                // Send backend Auth
+            }
+        }
     }
 }

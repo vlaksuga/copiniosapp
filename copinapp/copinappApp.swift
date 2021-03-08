@@ -14,8 +14,6 @@ import FBSDKLoginKit
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        // Firebase Init
-        FirebaseApp.configure()
         
         // Google Init
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
@@ -74,54 +72,18 @@ extension AppDelegate: GIDSignInDelegate {
 }
 
 
-// Extension for Facebook Login
-extension AppDelegate: LoginButtonDelegate {
-    
-    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-        try! Auth.auth().signOut()
-        print("Did Logout")
-    }
-    
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-//        if error != nil {
-//            print((error?.localizedDescription))
-//            return
-//        }
-//
-//        if AccessToken.current != nil {
-//            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-//            print("creadential = \(credential)")
-//            if error != nil {
-//                print((error?.localizedDescription))
-//                return
-//            }
-//
-//            print("Facebook Login Success")
-//            Auth.auth().signIn(with: credential) { (authResult, error) in
-//                if let error = error {
-//                    print("Firebase - Facebook authentication error \(error.localizedDescription)")
-//                } else {
-//                    print("Firebase - Facebook authentication success")
-//                    // Send Backend Here Maybe...
-//                }
-//            }
-//        }
-    }
-}
-
-
-
 @main
 struct copinappApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    init() {
+        // Firebase Init
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onOpenURL(perform: { url in
-                    // Firebase init in sceneDelegate
-                    ApplicationDelegate.shared.application(UIApplication.shared, open: url, sourceApplication: nil, annotation: UIApplication.OpenURLOptionsKey.annotation)
-                })
         }
     }
 }

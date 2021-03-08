@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2605E09B25F5ED440081772F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605E09A25F5ED440081772F /* Model.swift */; };
 		2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606F4F325E8903E004D7BC7 /* EntryView.swift */; };
 		2606F4FC25E8CF42004D7BC7 /* SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */; };
 		26560E0F25E773C2004C62D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		2586CE65AEDA89B10DA3C283 /* Pods-copinapp-copinappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp-copinappUITests.debug.xcconfig"; path = "Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2605E09A25F5ED440081772F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2606F4F325E8903E004D7BC7 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogin.swift; sourceTree = "<group>"; };
 		26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				265BCC9525E6034000210628 /* WebView.swift */,
 				265B4FBD25E6315F00436687 /* Loader.swift */,
 				2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */,
+				2605E09A25F5ED440081772F /* Model.swift */,
 			);
 			path = copinapp;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */,
 				265BCC5825E5FFA100210628 /* copinappApp.swift in Sources */,
 				265B4FBE25E6316000436687 /* Loader.swift in Sources */,
+				2605E09B25F5ED440081772F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +636,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"copinapp/Preview Content\"";
+				DEVELOPMENT_TEAM = S5696B8S9Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = copinapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -717,6 +722,7 @@
 			baseConfigurationReference = 2586CE65AEDA89B10DA3C283 /* Pods-copinapp-copinappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = copinappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
