@@ -7,14 +7,21 @@
 
 import Foundation
 
-struct HeaderContext: Codable {
-    var status: String
-    var msg: String
+struct Response: Codable {
+    var checkVersionResult: CheckVersion
+    var confirmResult: Confirm
+    var getMeResult: GetMe
+    var retLoginResult: RetLogin
 }
 
 struct CheckVersion: Codable {
-    var head: HeaderContext
-    var body: BodyCheckVersion
+    var head: HeaderContext?
+    var body: BodyCheckVersion?
+}
+
+struct HeaderContext: Codable {
+    var status: String
+    var msg: String
 }
 
 struct BodyCheckVersion: Codable {

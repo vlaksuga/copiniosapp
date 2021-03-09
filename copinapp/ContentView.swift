@@ -10,12 +10,33 @@ import GoogleSignIn
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
+    @State var result = CheckVersion()
+    @State var entrySetDone = false
     @State var showLoader = false
-    @State var entrySetDone = true
     @State var isLogin = false
     
+    func checkVersion() {
+        guard let url = URL(string: "https://sapi.copincomics.com/a/checkVersion.json") else {
+            print("invalid URL")
+            return
+        }
+        let request = URLRequest(url: url)
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            print("reponse : \(response.debugDescription)" )
+            print("data : \(String(data: data!, encoding: String.Encoding.utf8)!)" )
+            if let data = data {
+                print(data)
+                if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+                        result = decodedResponse.checkVersionResult
+                    print(result.head?.msg ?? "Unknown Header")
+                    return
+                }
+                entrySetDone = true
+            } else { print(error?.localizedDescription ?? "Unknown") }
+        }.resume()
+    }
+    
     var body: some View {
-        
                 return Group {
                     if entrySetDone {
                         ZStack {
@@ -64,6 +85,7 @@ struct ContentView: View {
                         }
                     } else {
                         EntryView()
+                            .onAppear(perform: checkVersion)
                     }
                 }
     }
