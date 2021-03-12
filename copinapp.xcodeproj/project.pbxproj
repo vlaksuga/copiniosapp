@@ -10,7 +10,6 @@
 		2605E09B25F5ED440081772F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605E09A25F5ED440081772F /* Model.swift */; };
 		2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606F4F325E8903E004D7BC7 /* EntryView.swift */; };
 		2606F4FC25E8CF42004D7BC7 /* SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */; };
-		26560E0F25E773C2004C62D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */; };
 		26560E1425E773F0004C62D2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26560E1325E773F0004C62D2 /* Podfile */; };
 		265B4FBE25E6316000436687 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B4FBD25E6315F00436687 /* Loader.swift */; };
 		265BCC5825E5FFA100210628 /* copinappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC5725E5FFA100210628 /* copinappApp.swift */; };
@@ -21,6 +20,7 @@
 		265BCC7525E5FFA400210628 /* copinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC7425E5FFA400210628 /* copinappUITests.swift */; };
 		265BCC8E25E601C900210628 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC8D25E601C900210628 /* ViewModel.swift */; };
 		265BCC9625E6034000210628 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC9525E6034000210628 /* WebView.swift */; };
+		26C4B3AB25F8A6E9004464EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */; };
 		347AC2B817F6E481FE09CDEB /* Pods_copinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */; };
 		826E63F46F160622875DC12C /* Pods_copinapp_copinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */; };
 		AD090E795DDC83687D2E2976 /* Pods_copinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35370E66C330929C25A9CD2C /* Pods_copinapp.framework */; };
@@ -48,7 +48,6 @@
 		2605E09A25F5ED440081772F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2606F4F325E8903E004D7BC7 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		2606F4FB25E8CF42004D7BC7 /* SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogin.swift; sourceTree = "<group>"; };
-		26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26560E1325E773F0004C62D2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		265B4FBD25E6315F00436687 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		265BCC5425E5FFA100210628 /* copinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = copinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +64,8 @@
 		265BCC7625E5FFA400210628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265BCC8D25E601C900210628 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		265BCC9525E6034000210628 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26C4B3C825F8B873004464EC /* copinapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = copinapp.entitlements; sourceTree = "<group>"; };
 		35370E66C330929C25A9CD2C /* Pods_copinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_copinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40387F75172A2A3D08EDE587 /* Pods-copinapp-copinappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp-copinappUITests.release.xcconfig"; path = "Target Support Files/Pods-copinapp-copinappUITests/Pods-copinapp-copinappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E1CCCA7F7CF0AF67AB5D81B /* Pods-copinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copinapp.debug.xcconfig"; path = "Target Support Files/Pods-copinapp/Pods-copinapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,12 +129,13 @@
 		265BCC5625E5FFA100210628 /* copinapp */ = {
 			isa = PBXGroup;
 			children = (
+				26C4B3C825F8B873004464EC /* copinapp.entitlements */,
 				265BCC5725E5FFA100210628 /* copinappApp.swift */,
 				265BCC5925E5FFA100210628 /* ContentView.swift */,
 				2606F4F325E8903E004D7BC7 /* EntryView.swift */,
 				265BCC5B25E5FFA400210628 /* Assets.xcassets */,
 				265BCC6025E5FFA400210628 /* Info.plist */,
-				26560E0E25E773C2004C62D2 /* GoogleService-Info.plist */,
+				26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */,
 				26560E1325E773F0004C62D2 /* Podfile */,
 				265BCC5D25E5FFA400210628 /* Preview Content */,
 				265BCC8D25E601C900210628 /* ViewModel.swift */,
@@ -305,9 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				265BCC5F25E5FFA400210628 /* Preview Assets.xcassets in Resources */,
+				26C4B3AB25F8A6E9004464EC /* GoogleService-Info.plist in Resources */,
 				265BCC5C25E5FFA400210628 /* Assets.xcassets in Resources */,
 				26560E1425E773F0004C62D2 /* Podfile in Resources */,
-				26560E0F25E773C2004C62D2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = copinapp/copinapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"copinapp/Preview Content\"";
 				DEVELOPMENT_TEAM = S5696B8S9Y;
@@ -644,7 +647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlaksuga.copinios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,8 +660,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = copinapp/copinapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"copinapp/Preview Content\"";
+				DEVELOPMENT_TEAM = S5696B8S9Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = copinapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -666,7 +671,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.copincomics.copinapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlaksuga.copinios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

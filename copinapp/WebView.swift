@@ -6,7 +6,6 @@
 //
 import SwiftUI
 import Foundation
-import UIKit
 import Combine
 import WebKit
 
@@ -29,6 +28,7 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
     // Viewmodel object
     @ObservedObject var viewModel: ViewModel
     var urlType: WebUrlType
+    var apiType: APIUrlType
     
     // Make a coordinator to co-ordinate with WKWebView's default delegate functions
     func makeCoordinator() -> Coordinator {
@@ -38,7 +38,6 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
     func makeUIView(context: Context) -> WKWebView {
         // Enable javascript in WKWebView to interact with the web app
         let preferences = WKPreferences()
-        preferences.javaScriptEnabled = true
         
         let configuration = WKWebViewConfiguration()
         // Here "iOSNative" is our interface name that we pushed to the website that is being loaded
@@ -62,7 +61,12 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
             
         } else if urlType == .publicUrl {
             // Load a public website
-            if let url = URL(string: "https://www.copincomics.com") {
+            if let url = URL(string: "https://copincomics.com") {
+                webView.load(URLRequest(url: url))
+            }
+        } else if urlType == .devUrl {
+            // Load a dev website
+            if let url = URL(string: "https://dev.copincomics.com") {
                 webView.load(URLRequest(url: url))
             }
         }

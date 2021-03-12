@@ -9,10 +9,14 @@ import SwiftUI
 import GoogleSignIn
 import FBSDKLoginKit
 import Firebase
+import CryptoKit
+import AuthenticationServices
 
+let provider = OAuthProvider(providerID: "twitter.com")
 
 // Facebook Sign In
 class FacebookLoginManager: ObservableObject {
+
     let loginManager = LoginManager()
     func attemptLoginFacebook() {
         loginManager.logIn(permissions: [.publicProfile, .email], viewController: nil) { result in
@@ -40,7 +44,6 @@ class FacebookLoginManager: ObservableObject {
 // Sign-In flow UI of the provider
 struct SocialLogin: UIViewRepresentable {
     
-    
     func makeUIView(context: Context) -> UIView {
         return UIView()
     }
@@ -60,7 +63,7 @@ struct SocialLogin: UIViewRepresentable {
     }
     
     func attemptLoginTwitter() {
-        let provider = OAuthProvider(providerID: "twitter.com")
+        print("twitter login try")
         provider.getCredentialWith(nil) { credential, error in
             if error != nil {
                 print(error?.localizedDescription ?? "error")
@@ -77,4 +80,5 @@ struct SocialLogin: UIViewRepresentable {
             }
         }
     }
+    
 }
