@@ -156,14 +156,15 @@ extension AppDelegate: GIDSignInDelegate {
     }
 }
 
-
 // Extension for Apple Sign In
 extension AppDelegate: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
+    
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        return ASPresentationAnchor()
+        return (UIApplication.shared.windows.last?.rootViewController?.view.window)!
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        print("controller start")
         if let appleIdCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             guard let nonce = currentNonce else {
                 fatalError("Invalid state: A login callback was received, but no login request was sent.")
@@ -225,7 +226,7 @@ extension AppDelegate: ASAuthorizationControllerDelegate, ASAuthorizationControl
                 }
             }
         }
-        print("result : \(result)")
+        print("nonce : \(result)")
         return result
     }
     

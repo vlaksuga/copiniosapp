@@ -11,7 +11,7 @@ import GoogleSignIn
 struct ContentView: View {
     
     let currentVersion = 11
-    
+    let appDelegate = AppDelegate()
     @ObservedObject var viewModel = ViewModel()
     @State var apiURL = "https://sapi.copincomics.com/"
     @State var entryURL = "https://stage.copincomics.com"
@@ -20,6 +20,7 @@ struct ContentView: View {
     @State var versionCheck = false
     @State var loginToken = UserDefaults.standard.string(forKey: "loginToken")
     @State var deviceToken = UserDefaults.standard.string(forKey: "deviceToken")
+    
     var body: some View {
         return Group {
             if entrySetDone {
@@ -61,7 +62,7 @@ struct ContentView: View {
                             })
                             
                             Button {
-                                AppDelegate().attemptLoginApple()
+                                appDelegate.attemptLoginApple()
                             } label: {
                                 Image("apple")
                                     .resizable()
@@ -78,7 +79,7 @@ struct ContentView: View {
                 }
             } else {
                 EntryView()
-                    .onAppear(perform: checkVersion)
+                    .onAppear(perform: checkLogin)
             }
         }
     }
@@ -122,18 +123,20 @@ struct ContentView: View {
                             entryURL = entryURL11
                             print(apiURL)
                             print(entryURL)
+                            
                         }
                     }
                     print("recentVersion is \(recentVersion)")
                 } else {
                     print("decode fail")
                 }
-                checkLogin(loginToken: <#T##String?#>)
+                
             } else { print(error?.localizedDescription ?? "Unknown") }
         }.resume()
     }
     
-    func checkLogin(loginToken: String?) {
+    func checkLogin() {
+        print("checkLogin Start")
         if loginToken != nil {
             print("Login Token : \(String(describing: loginToken))")
             let subURL = "a/processLoginFirebase.json"
@@ -155,15 +158,21 @@ struct ContentView: View {
                             print(body.t2)
                             print(body.token)
                             print(body.userinfo.accountpkey)
-                            // Webview Login Firebsel
+                            // Webview Login Firebase
+                            entrySetDone = true
+                        } else {
+                            print(error?.localizedDescription ?? "Unkwnown Error")
                         }
-                        
-                        
                     }
                 } else { print(error?.localizedDescription ?? "Unknown") }
             }.resume()
+        } else {
+            print("Login Token is Empty")
+            entrySetDone = true
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
