@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PurchaseView: View {
     
-    @StateObject var storeManager: StoreManager
+    @StateObject var storeManager : StoreManager
     
     var body: some View {
         List(storeManager.myProducts, id:\.self) { product in

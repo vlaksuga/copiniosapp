@@ -10,6 +10,7 @@ import SwiftUI
 struct TestLoginView: View {
     
     let appDelegate = AppDelegate()
+    @State var activePurchase = false
     
     var body: some View {
         VStack {
@@ -48,7 +49,6 @@ struct TestLoginView: View {
                         .resizable()
                         .frame(width: 50, height: 50, alignment: .center)
                 }
-
             }
         }
     }
