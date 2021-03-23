@@ -23,7 +23,7 @@
 		265BCC7525E5FFA400210628 /* copinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC7425E5FFA400210628 /* copinappUITests.swift */; };
 		265BCC8E25E601C900210628 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC8D25E601C900210628 /* ViewModel.swift */; };
 		265BCC9625E6034000210628 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC9525E6034000210628 /* WebView.swift */; };
-		26739A3E260980FF0060C8C0 /* TestToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26739A3D260980FF0060C8C0 /* TestToolView.swift */; };
+		26739A3E260980FF0060C8C0 /* TestLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26739A3D260980FF0060C8C0 /* TestLoginView.swift */; };
 		26C4B3AB25F8A6E9004464EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */; };
 		347AC2B817F6E481FE09CDEB /* Pods_copinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */; };
 		826E63F46F160622875DC12C /* Pods_copinapp_copinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */; };
@@ -71,8 +71,7 @@
 		265BCC7625E5FFA400210628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265BCC8D25E601C900210628 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		265BCC9525E6034000210628 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		26739A3D260980FF0060C8C0 /* TestToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToolView.swift; sourceTree = "<group>"; };
-		268010ED26019CF3001F0ADC /* StoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitConfiguration.storekit; sourceTree = "<group>"; };
+		26739A3D260980FF0060C8C0 /* TestLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoginView.swift; sourceTree = "<group>"; };
 		26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26C4B3C825F8B873004464EC /* copinapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = copinapp.entitlements; sourceTree = "<group>"; };
 		35370E66C330929C25A9CD2C /* Pods_copinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_copinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +116,6 @@
 		265BCC4B25E5FFA000210628 = {
 			isa = PBXGroup;
 			children = (
-				268010ED26019CF3001F0ADC /* StoreKitConfiguration.storekit */,
 				265BCC5625E5FFA100210628 /* copinapp */,
 				265BCC6825E5FFA400210628 /* copinappTests */,
 				265BCC7325E5FFA400210628 /* copinappUITests */,
@@ -143,7 +141,7 @@
 				26C4B3C825F8B873004464EC /* copinapp.entitlements */,
 				265BCC5725E5FFA100210628 /* copinappApp.swift */,
 				265BCC5925E5FFA100210628 /* ContentView.swift */,
-				26739A3D260980FF0060C8C0 /* TestToolView.swift */,
+				26739A3D260980FF0060C8C0 /* TestLoginView.swift */,
 				2606F4F325E8903E004D7BC7 /* EntryView.swift */,
 				265BCC5B25E5FFA400210628 /* Assets.xcassets */,
 				265BCC6025E5FFA400210628 /* Info.plist */,
@@ -492,7 +490,7 @@
 				2606F4FC25E8CF42004D7BC7 /* SocialLogin.swift in Sources */,
 				2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */,
 				265BCC5825E5FFA100210628 /* copinappApp.swift in Sources */,
-				26739A3E260980FF0060C8C0 /* TestToolView.swift in Sources */,
+				26739A3E260980FF0060C8C0 /* TestLoginView.swift in Sources */,
 				265B4FBE25E6316000436687 /* Loader.swift in Sources */,
 				2610B4D72600769400D5FD71 /* StoreManager.swift in Sources */,
 				2610B4CC26006E0300D5FD71 /* PurchaseView.swift in Sources */,
