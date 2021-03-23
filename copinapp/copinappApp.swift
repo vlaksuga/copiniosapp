@@ -11,6 +11,7 @@ import GoogleSignIn
 import FBSDKLoginKit
 import CryptoKit
 import AuthenticationServices
+import StoreKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     
@@ -259,7 +260,11 @@ extension AppDelegate: ASAuthorizationControllerDelegate, ASAuthorizationControl
 
 @main
 struct copinappApp: App {
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var storeManager = StoreManager()
+    
+    let productIDs = ["com.vlaksuga.copinios.coin10", "com.vlaksuga.copinios.coin30"]
     
     init() {
         // Firebase Init
@@ -268,7 +273,11 @@ struct copinappApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(storeManager: storeManager)
+                .onAppear(perform: {
+                    storeManager.getProducts(productIDs: productIDs)
+                    SKPaymentQueue.default().add(storeManager)
+                })
         }
     }
 }

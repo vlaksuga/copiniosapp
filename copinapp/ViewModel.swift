@@ -13,6 +13,7 @@ class ViewModel: ObservableObject {
     var valuePublisher = PassthroughSubject<String, Never>()
     var authPublisher = PassthroughSubject<Bool, Never>()
     var showLoader = PassthroughSubject<Bool, Never>()
+    var entryPublisher = PassthroughSubject<Bool, Never>()
 }
 
 enum WebViewNavigation {
