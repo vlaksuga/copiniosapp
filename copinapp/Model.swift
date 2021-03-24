@@ -32,10 +32,6 @@ struct CheckVersion: Codable {
     }
 }
 
-
-
-
-
 struct CoinItem: Codable {
     var id: String
     var name: String
@@ -58,8 +54,6 @@ struct Confirm: Codable {
         var result: String
     }
 }
-
-
 
 struct GetMe: Codable {
     var head: HeaderContext
@@ -86,8 +80,6 @@ struct GetMe: Codable {
     }
 }
 
-
-
 struct RetLogin: Codable {
     var head: HeaderContext
     var body: BodyRetLogin
@@ -101,16 +93,18 @@ struct RetLogin: Codable {
         var t2: String
         var userinfo: UserInfoForm
         var token: String
+        
+        struct UserInfoForm: Codable {
+            var nick: String
+            var kind: String
+            var accesstoken: String
+            var deviceid: String
+            var newlogintoken: String
+            var status: String
+            var accountpkey : String
+        }
     }
 }
 
 
-struct UserInfoForm: Codable {
-    var nick: String
-    var kind: String
-    var accesstoken: String
-    var deviceid: String
-    var newlogintoken: String
-    var status: String
-    var accountpkey : String
-}
+

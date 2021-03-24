@@ -25,7 +25,7 @@ struct TestLoginView: View {
                 })
                 
                 Button(action: {
-                    FacebookLoginManager().attemptLoginFacebook()
+                    SocialLogin().attemptLoginFacebook()
                 }, label: {
                     Image("facebook")
                         .resizable()

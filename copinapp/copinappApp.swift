@@ -13,9 +13,7 @@ import CryptoKit
 import AuthenticationServices
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    
-    var deviceToken: String? = UserDefaults.standard.string(forKey: "deviceToken")
-    var loginToken: String? = UserDefaults.standard.string(forKey: "loginToken")
+    @State var loginToken: String? = UserDefaults.standard.string(forKey: "loginToken")
     
     fileprivate var currentNonce: String?
     let gcmMessageIDKey = "gcm.message_id"
@@ -109,8 +107,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 extension AppDelegate: MessagingDelegate {
   func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
     print("Firebase registration token: \(String(describing: fcmToken))")
-    deviceToken = fcmToken
-    print("Device Token : \(String(describing: deviceToken))")
+    UserDefaults.standard.set(fcmToken, forKey: "deviceToken")
     let dataDict:[String: String] = ["token": fcmToken ?? ""]
     NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
     // TODO: If necessary send token to application server.
@@ -255,7 +252,6 @@ extension AppDelegate: ASAuthorizationControllerDelegate, ASAuthorizationControl
         authorizationController.performRequests()
     }
 }
-
 
 @main
 struct copinappApp: App {

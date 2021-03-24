@@ -24,6 +24,8 @@
 		265BCC8E25E601C900210628 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC8D25E601C900210628 /* ViewModel.swift */; };
 		265BCC9625E6034000210628 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC9525E6034000210628 /* WebView.swift */; };
 		26739A3E260980FF0060C8C0 /* TestLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26739A3D260980FF0060C8C0 /* TestLoginView.swift */; };
+		268560582609C50E009D45D6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26560E1325E773F0004C62D2 /* Podfile */; };
+		2685605C2609C50F009D45D6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26560E1325E773F0004C62D2 /* Podfile */; };
 		26C4B3AB25F8A6E9004464EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */; };
 		347AC2B817F6E481FE09CDEB /* Pods_copinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */; };
 		826E63F46F160622875DC12C /* Pods_copinapp_copinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */; };
@@ -330,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268560582609C50E009D45D6 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2685605C2609C50F009D45D6 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

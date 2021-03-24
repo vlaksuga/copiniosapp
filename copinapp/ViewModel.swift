@@ -21,7 +21,7 @@ enum WebViewNavigation {
 }
 
 enum WebUrlType {
-    case publicUrl, stageUrl, devUrl
+    case publicUrl, stageUrl, devUrl, gitPageUrl
 }
 
 enum APIUrlType {

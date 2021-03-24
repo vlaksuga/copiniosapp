@@ -15,13 +15,28 @@ protocol WebViewHandlerDelegate {
     func receivedStringValueFromWebView(value: String)
 }
 
+let appDelegate = AppDelegate()
+
 struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
+    
     func receivedJsonValueFromWebView(value: [String: Any?]) {
         print("JSON value received from web is: \(value)")
     }
     
     func receivedStringValueFromWebView(value: String) {
         print("String value received from web is: \(value)")
+        switch value {
+        case "googleLogin":
+            SocialLogin().attemptLoginGoogle()
+        case "facebookLogin":
+            SocialLogin().attemptLoginFacebook()
+        case "twitterLogin":
+            SocialLogin().attemptLoginTwitter()
+        case "appleLogin":
+            appDelegate.attemptLoginApple()
+        default:
+            print(value)
+        }
     }
     
     
@@ -55,7 +70,7 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
     func updateUIView(_ webView: WKWebView, context: Context)  {
         if urlType == .stageUrl {
             // Load a stage website
-            if let url = URL(string: "https://stage.copincomics.com") {
+            if let url = URL(string: "https://copincomics.com") {
                 webView.load(URLRequest(url: url))
             }
             
@@ -67,6 +82,11 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
         } else if urlType == .devUrl {
             // Load a dev website
             if let url = URL(string: "https://dev.copincomics.com") {
+                webView.load(URLRequest(url: url))
+            }
+        } else if urlType == .gitPageUrl {
+            // Load a dev website
+            if let url = URL(string: "https://vlaksuga.github.io/playdev/index.html?abc") {
                 webView.load(URLRequest(url: url))
             }
         }
@@ -159,11 +179,12 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
 
 extension WebView.Coordinator: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if message.name == "iOSNative" {
+        if message.name == "iOSCopin" {
+            print("userContentController start")
             if let body = message.body as? [String: Any?] {
-                delegate?.receivedJsonValueFromWebView(value: body)
+                parent.receivedJsonValueFromWebView(value: body)
             } else if let body = message.body as? String {
-                delegate?.receivedStringValueFromWebView(value: body)
+                parent.receivedStringValueFromWebView(value: body)
             }
         }
     }
