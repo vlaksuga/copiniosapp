@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestLoginView: View {
+struct LoginView: View {
     
     let appDelegate = AppDelegate()
     @State var activePurchase = false
@@ -54,8 +54,8 @@ struct TestLoginView: View {
     }
 }
 
-struct TestLoginView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        TestLoginView()
+        LoginView()
     }
 }

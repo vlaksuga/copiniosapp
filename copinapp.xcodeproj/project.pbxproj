@@ -23,9 +23,10 @@
 		265BCC7525E5FFA400210628 /* copinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC7425E5FFA400210628 /* copinappUITests.swift */; };
 		265BCC8E25E601C900210628 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC8D25E601C900210628 /* ViewModel.swift */; };
 		265BCC9625E6034000210628 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BCC9525E6034000210628 /* WebView.swift */; };
-		26739A3E260980FF0060C8C0 /* TestLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26739A3D260980FF0060C8C0 /* TestLoginView.swift */; };
+		26739A3E260980FF0060C8C0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26739A3D260980FF0060C8C0 /* LoginView.swift */; };
 		268560582609C50E009D45D6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26560E1325E773F0004C62D2 /* Podfile */; };
 		2685605C2609C50F009D45D6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26560E1325E773F0004C62D2 /* Podfile */; };
+		268560A9260C2C2F009D45D6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268560A8260C2C2F009D45D6 /* NetworkMonitor.swift */; };
 		26C4B3AB25F8A6E9004464EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */; };
 		347AC2B817F6E481FE09CDEB /* Pods_copinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7670D2DF724E746A83C6FF77 /* Pods_copinappTests.framework */; };
 		826E63F46F160622875DC12C /* Pods_copinapp_copinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA297830E09BB75F808A9627 /* Pods_copinapp_copinappUITests.framework */; };
@@ -73,7 +74,8 @@
 		265BCC7625E5FFA400210628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265BCC8D25E601C900210628 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		265BCC9525E6034000210628 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		26739A3D260980FF0060C8C0 /* TestLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoginView.swift; sourceTree = "<group>"; };
+		26739A3D260980FF0060C8C0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		268560A8260C2C2F009D45D6 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		26C4B3AA25F8A6E9004464EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26C4B3C825F8B873004464EC /* copinapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = copinapp.entitlements; sourceTree = "<group>"; };
 		35370E66C330929C25A9CD2C /* Pods_copinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_copinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +145,7 @@
 				26C4B3C825F8B873004464EC /* copinapp.entitlements */,
 				265BCC5725E5FFA100210628 /* copinappApp.swift */,
 				265BCC5925E5FFA100210628 /* ContentView.swift */,
-				26739A3D260980FF0060C8C0 /* TestLoginView.swift */,
+				26739A3D260980FF0060C8C0 /* LoginView.swift */,
 				2606F4F325E8903E004D7BC7 /* EntryView.swift */,
 				265BCC5B25E5FFA400210628 /* Assets.xcassets */,
 				265BCC6025E5FFA400210628 /* Info.plist */,
@@ -157,6 +159,7 @@
 				2605E09A25F5ED440081772F /* Model.swift */,
 				2610B4CB26006E0300D5FD71 /* PurchaseView.swift */,
 				2610B4D62600769400D5FD71 /* StoreManager.swift */,
+				268560A8260C2C2F009D45D6 /* NetworkMonitor.swift */,
 			);
 			path = copinapp;
 			sourceTree = "<group>";
@@ -489,12 +492,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				265BCC5A25E5FFA100210628 /* ContentView.swift in Sources */,
+				268560A9260C2C2F009D45D6 /* NetworkMonitor.swift in Sources */,
 				265BCC9625E6034000210628 /* WebView.swift in Sources */,
 				265BCC8E25E601C900210628 /* ViewModel.swift in Sources */,
 				2606F4FC25E8CF42004D7BC7 /* SocialLogin.swift in Sources */,
 				2606F4F425E8903E004D7BC7 /* EntryView.swift in Sources */,
 				265BCC5825E5FFA100210628 /* copinappApp.swift in Sources */,
-				26739A3E260980FF0060C8C0 /* TestLoginView.swift in Sources */,
+				26739A3E260980FF0060C8C0 /* LoginView.swift in Sources */,
 				265B4FBE25E6316000436687 /* Loader.swift in Sources */,
 				2610B4D72600769400D5FD71 /* StoreManager.swift in Sources */,
 				2610B4CC26006E0300D5FD71 /* PurchaseView.swift in Sources */,

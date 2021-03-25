@@ -264,7 +264,13 @@ struct copinappApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(networkMonitor: NetworkMonitor.shared)
+                .onAppear(){
+                    NetworkMonitor.shared.startMonitoring()
+                }
+                .onDisappear(){
+                    NetworkMonitor.shared.stopMonitoring()
+                }
         }
     }
 }

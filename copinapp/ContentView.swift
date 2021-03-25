@@ -11,12 +11,14 @@ import StoreKit
 
 struct ContentView: View {
     
+    @ObservedObject var networkMonitor: NetworkMonitor
     @ObservedObject var viewModel = ViewModel()
     @StateObject var storeManager = StoreManager()
     @State var showLoader = false
     @State var entrySetDone = false
-    @State var showTestButton = true
+    @State var showLoginButton = false
     @State var storeMode = false
+    @State var showAlert = false
     
     let productIDs = [
         "com.vlaksuga.copinios.coin10",
@@ -39,9 +41,11 @@ struct ContentView: View {
                                 .onReceive(self.viewModel.showLoader.receive(on: RunLoop.main)) { value in
                                     self.showLoader = value
                                 }
+                        }.alert(isPresented: $networkMonitor.showAlert) {
+                            Alert(title: Text("Network Connection"), message: Text("Network is now unavailable"), dismissButton: .default(Text("Got it")))
                         }
-                        if showTestButton {
-                            TestLoginView()
+                        if showLoginButton {
+                            LoginView()
                         }
                         
                         if showLoader {
@@ -56,10 +60,11 @@ struct ContentView: View {
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(networkMonitor: NetworkMonitor.shared)
     }
 }

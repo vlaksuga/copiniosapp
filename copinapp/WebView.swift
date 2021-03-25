@@ -26,14 +26,23 @@ struct WebView: UIViewRepresentable, WebViewHandlerDelegate {
     func receivedStringValueFromWebView(value: String) {
         print("String value received from web is: \(value)")
         switch value {
+        
         case "googleLogin":
+            print("Attemp Login: Google")
             SocialLogin().attemptLoginGoogle()
+            
         case "facebookLogin":
+            print("Attemp Login: facebookLogin")
             SocialLogin().attemptLoginFacebook()
+            
         case "twitterLogin":
+            print("Attemp Login: twitterLogin")
             SocialLogin().attemptLoginTwitter()
+            
         case "appleLogin":
+            print("Attemp Login: appleLogin")
             appDelegate.attemptLoginApple()
+            
         default:
             print(value)
         }

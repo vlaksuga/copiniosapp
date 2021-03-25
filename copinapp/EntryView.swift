@@ -14,15 +14,15 @@ struct EntryView: View {
     
     let currentVersion = 11
     let appDelegate = AppDelegate()
-    let contentView = ContentView()
+    let contentView = ContentView(networkMonitor: NetworkMonitor.shared)
     
     @ObservedObject var viewModel = ViewModel()
     @State var apiURL = "https://sapi.copincomics.com/"
     @State var entryURL = "https://stage.copincomics.com"
     @State var showLoader = false
-    @Binding var entrySetDone : Bool
     @State var versionCheck = false
     @State var loginToken = UserDefaults.standard.string(forKey: "loginToken")
+    @Binding var entrySetDone : Bool
     
     var body: some View {
         ZStack {

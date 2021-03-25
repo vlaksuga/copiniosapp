@@ -18,8 +18,8 @@ let provider = OAuthProvider(providerID: "twitter.com")
 class SocialLogin: ObservableObject {
     
     @State var entrySetDone = false
-    @State var apiURL = UserDefaults.standard.string(forKey: "apiURL")
-    @State var deviceToken = UserDefaults.standard.string(forKey: "deviceToken")
+    @State var apiURL: String? = UserDefaults.standard.string(forKey: "apiURL")
+    @State var deviceToken: String? = UserDefaults.standard.string(forKey: "deviceToken")
     
     func attemptLoginGoogle() {
         // Must present viewController UIViewController in UIKit, not support for SwiftUI 2.0 yet.
@@ -86,7 +86,7 @@ class SocialLogin: ObservableObject {
                 if let token: String = token {
                     print(token)
                     let subURL: String = "a/processLoginFirebase.json"
-                    guard let url = URL(string: self.apiURL + subURL + "?idToken=" + token + "&c=" + self.deviceToken! + "&d=android") else {
+                    guard let url = URL(string: self.apiURL! + subURL + "?idToken=" + token + "&c=" + self.deviceToken! + "&d=ios") else {
                         print("invalid URL")
                         return
                     }
@@ -103,7 +103,6 @@ class SocialLogin: ObservableObject {
                                 UserDefaults.standard.set(body.token, forKey: "accountToken")
                                 UserDefaults.standard.set(body.userinfo.accountpkey, forKey: "accountPKey")
                                 // Set identitys for trackers here...
-                                
                             } else {
                                 print("decode fail")
                             }
